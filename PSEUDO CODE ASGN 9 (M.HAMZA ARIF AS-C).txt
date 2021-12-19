@@ -1,0 +1,47 @@
+                                                  PSEUDO CODE ASSIGNMENT 9
+                                                   //M.HAMZA ARIF AS-C//
+        DECLARE a, b, NewA, NewB, FirstA, FirstB, Finala, Finalb, Finalstring : STRING
+        DECLARE charA, charB : CHARACTER
+        DECLARE C, D : INTEGER
+        a <---- " "
+        b <---- " "
+        NewA <---- ""
+        NewB <---- ""
+        FirstA <---- " "
+        FirstB <---- " "
+        Finala <---- " "
+        Finalb <---- " "
+        Finalstring <---- " "
+        charA <---- " "
+        charB <---- " "
+        C <---- 0
+        D <---- 0
+
+        OUTPUT "Enter your first string"
+        INPUT a 
+        OUTPUT "Enter your second string"
+        INPUT b
+
+        FOR C <---- 3 To LEN(a)
+            charA <---- MID(a, C, 1)
+            NewA <---- NewA + charA
+
+        NEXT
+
+        FirstB <---- LEFT(b, 2)
+        Finala <---- FirstB + NewA
+
+        FOR D <---- 3 TO LEN(b)
+            charB <---- MID(b, D, 1)
+            NewB <---- NewB + charB
+
+        NEXT
+
+        FirstA <---- LEFT(a, 2)
+        Finalb <---- FirstA + NewB
+
+        Finalstring <---- Finala + " " + Finalb
+
+        OUTPUT "Your final string is " + Finalstring
+        
+

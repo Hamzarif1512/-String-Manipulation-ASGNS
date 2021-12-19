@@ -1,0 +1,36 @@
+                                                  PSEUDO CODE ASSIGNMENT 11
+                                                   //M.HAMZA ARIF AS-C//
+DECLARE Str1 , Str1, NOTlocator, BADlocator, textselect1, textselect2, finalstring : STRING
+DECLARE C : INTEGER
+        Str1 <---- " "
+        NOTlocator <---- " "
+        BADlocator <---- " "
+        textselect1 <---- " "
+        textselect2  <----" "
+        finalstring <---- " "
+        C <---- 0
+
+OUTPUT "Please enter your string."
+       INPUT Str1 
+        Str1 <---- LCASE(Str1)
+        NOTlocator <---- LOCATE(Str1, "not ")
+        BADlocator <---- LOCATE(Str1, "bad ") OR LOCATE(Str1, "bad")
+
+        IF NOTlocator < BADlocator THEN
+
+            FOR C <---- 1 TO (NOTlocator - 1)
+                textselect1 <---- LEFT(Str1, C)
+            NEXT
+
+            textselect2 <---- MID(Str1, BADlocator + 3)
+
+
+            
+            finalstring <---- textselect1 + "good" + textselect2
+
+            OUTPUT "Your new string is: " + finalstring
+            
+        ELSE
+            OUTPUT "WRONG STRING ENTERED. Ensure that BAD follows NOT in your string."
+            
+        END IF

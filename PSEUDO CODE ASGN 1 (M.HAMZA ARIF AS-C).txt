@@ -1,0 +1,38 @@
+                                                    PSEUDO CODE ASSIGNMENT 1 
+                                                     //M.HAMZA ARIF AS-C//
+
+        DECLARE str1 : STRING
+        DECLARE isalpha : BOOLEAN
+        DECLARE str2 : STRING
+        DECLARE C : INTEGER
+        DECLARE charA : CHARACTER
+
+        str1 <---- " "
+        str2 <---- "abcdefghijklmnopqrstuvwxyz"
+        isalpha <---- TRUE
+        C <---- 0
+        charA <---- " "
+
+        OUTPUT "kindly enter your string"
+        INPUT str1
+        str1 <---- LCASE(str1)
+        FOR C <---- 1 TO LEN(str2)
+
+
+            charA <---- MID(str2, C, 1)
+            IF InStr(str1, charA) = 0 THEN
+                isalpha = FALSE
+            END IF
+        NEXT
+
+
+        IF isalpha = TRUE THEN
+
+
+            OUTPUT "Your string contains all the alphabets"
+            
+        ELSE
+            OUTPUT "your string does not contain all the alphabets."
+            
+        END IF
+

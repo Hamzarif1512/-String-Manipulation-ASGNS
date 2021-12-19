@@ -1,0 +1,48 @@
+                                                    PSEUDO CODE ASSIGNMENT 5
+                                                     //M.HAMZA ARIF AS-C//
+DECLARE str1 : STRING
+        DECLARE charA : CHARACTER
+        DECLARE Acounter, Ecounter, Icounter, Ocounter, Ucounter : INTEGER
+        DECLARE c : INTEGER
+
+        str1 <------ " "
+        charA <------  " "
+        Acounter <------  0
+        Ecounter <------  0
+        Icounter <------  0
+        Ocounter <------  0
+        Ucounter <------  0
+        c <------  0
+
+        OUTPUT "Enter your string"
+        INPUT str1
+
+        FOR c <----- 1 To LEN(str1)
+            charA <------  MID(str1, c, 1)
+            charA <------  UCASE(charA)
+
+            IF charA = "A" THEN
+                Acounter <------  Acounter + 1
+
+            ELSEIF charA = "E" THEN
+                Ecounter <------  Ecounter + 1
+
+            ELSEIF charA = "I" THEN
+                Icounter <------  Icounter + 1
+
+            ELSEIF charA = "O" THEN
+                Ocounter <------  Ocounter + 1
+
+            ELSEIF charA = "U" THEN
+                Ucounter <------  Ucounter + 1
+
+            END IF
+                 NEXT
+
+        OUTPUT "The number of A's in your string are:  " + Acounter
+        OUTPUT "The number of E's in your string are:  " + Ecounter
+        OUTPUT "The number of I's in your string are:  " + Icounter
+        OUTPUT "The number of O's in your string are:  " + Ocounter
+        OUTPUT "The number of U's in your string are:  " + Ucounter
+
+        

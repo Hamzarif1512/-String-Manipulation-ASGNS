@@ -1,0 +1,16 @@
+                                                   PSEUDO CODE ASSIGNMENT 6
+                                                     //M.HAMZA ARIF AS-C//
+DECLARE Donutcount : INTEGER
+        Donutcount <---- 0
+
+        OUTPUT "Welcome! Please enter the number of donuts you would like to purchase."
+        INPUT Donutcount 
+
+        IF Donutcount >= 10 THEN
+            OUTPUT "Number of Donuts: Many"
+            
+        ELSE
+            OUTPUT "Number of Donuts: " + Donutcount
+            
+        END IF
+    

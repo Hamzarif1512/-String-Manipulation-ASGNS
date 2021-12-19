@@ -1,0 +1,31 @@
+                                          PSEUDO CODE ASSIGNMENT 8
+                                            //M.HAMZA ARIF AS-C//
+        DECLARE s, Finalstring : STRING
+        DECLARE Initialchar, Selectchar : CHARACTER
+        s <---- " "
+        Finalstring <---- " "
+        Initialchar <---- " "
+        Selectchar <---- " "
+
+
+        OUTPUT "Please enter your string."
+        INPUT s
+        Initialchar <---- LEFT(s, 1)
+        Finalstring <---- Finalstring + Initialchar
+
+        FOR C <---- 2 TO LEN(s)
+            Selectchar <---- MID(s, C, 1)
+
+            IF Selectchar = Initialchar THEN
+                Selectchar <---- "*"
+                Finalstring <---- Finalstring + selectchar
+
+
+            ELSE
+                Finalstring <---- Finalstring + selectchar
+
+            END IF
+        NEXT
+
+        OUTPUT "Your final string is: " + Finalstring
+        

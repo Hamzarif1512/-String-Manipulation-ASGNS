@@ -1,0 +1,25 @@
+                                                   PSEUDOCODE ASSIGNMENT 10
+                                                    //M.HAMZA ARIF AS-C//
+        DECLARE str1, str2, Finalstring : STRING
+        str1 <---- " "
+        str2 <---- " "
+        Finalstring <---- " "
+
+        OUTPUT "Please enter a string"
+        INPUT str1
+
+        IF LEN(str1) < 3 THEN
+            OUTPUT "Your final string is: " + str1
+            
+        ELSE
+            str2 <---- RIGHT(str1, 3)
+            IF "ing" = str2 THEN
+                Finalstring <---- str1 + "ly"
+            ELSE
+                Finalstring <---- str1 + "ing"
+
+            END IF
+            OUTPUT "Your final string is: " + Finalstring
+
+        END IF
+        

@@ -1,0 +1,30 @@
+                                                       PSEUDO CODE ASSIGNMENT 2
+                                                       //M.HAMZA ARIF AS-C//
+DECLARE str1, str2 : STRING
+        DECLARE charA, charB, charC : CHARACTER
+        DECLARE C : INTEGER
+
+        str1 <---- " "
+        str2 <---- " "
+        C <---- 0
+        charA <---- " "
+        charB <---- " "
+        charC <---- " "
+
+        OUTPUT "please enter your string"
+        INPUT str1
+        OUTPUT "enter the character which you would like to be replaced"
+        INPUT charA 
+        OUTPUT "enter the character you would like to replace with"
+        INPUT charC
+
+        FOR C <---- 1 TO LEN(str1)
+            charB <---- MID(str1, C, 1)
+
+            IF charA = charB THEN
+                str2 <---- str2 + charC
+            ELSE
+                str2 <---- str2 + charB
+            END IF 
+        NEXT
+        OUTPUT "this is your new string:"+ str2

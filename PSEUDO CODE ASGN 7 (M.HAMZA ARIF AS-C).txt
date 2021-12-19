@@ -1,0 +1,23 @@
+                                                    PSEUDO CODE ASSIGNMENT 7
+                                                     //M.HAMZA ARIF AS-C// 
+        DECLARE s, str2, str3, finalstring : STRING
+        s <---- " "
+        str2 <---- " "
+        str3 <---- " "
+        finalstring <---- " "
+
+        OUTPUT "Please enter your string."
+        INPUT s
+
+        IF LEN(s) > 2 THEN
+            str2 <---- LEFT(s, 2)
+            str3 <---- RIGHT(s, 2)
+            finalstring <---- str2 & str3
+            OUTPUT "Your final string is: " + finalstring
+            
+
+        ELSE
+            OUTPUT "Your final string is: " + s
+            
+        END IF
+   

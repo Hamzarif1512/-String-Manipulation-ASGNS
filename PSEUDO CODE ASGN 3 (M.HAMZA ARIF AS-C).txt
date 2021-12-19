@@ -1,0 +1,49 @@
+                                                    PSEUDO CODE ASSIGNMENT 3
+                                                     //M.HAMZA ARIF AS-C//
+        DECLARE str1 : STRING
+        DECLARE charR, CharA, CharB : CHARACTER
+        DECLARE alphcounter, Othcount, ncount, C, D, charcount : INTEGER
+        alphcounter <---- 0
+        Othcount <---- 0
+        ncount <---- 0
+        charcount <---- 0
+        C <---- 0
+        D <---- 0
+        charR <---- " "
+        CharA <---- " "
+        CharB <---- " "
+
+
+        OUTPUT "Enter your string"
+        INPUT str1 
+
+        OUTPUT "Enter the character in your string for which the count is to be known."
+        INPUT CharA
+
+        FOR D <---- 1 TO LEN(str1)
+            CharB <---- MID(str1, D, 1)
+            IF CharA = CharB THEN
+                charcount <---- charcount + 1
+            END IF 
+        NEXT
+
+        FOR C <---- 1 TO LEN(str1)
+            charR <---- MID(str1, C, 1)
+
+            IF charR >= "A" AND charR <= "Z" OR charR >= "a" AND charR <= "z" THEN
+                alphcounter <---- alphcounter + 1
+
+            ELSEIF charR >= "0" AND charR <= "9" THEN
+                ncount <---- ncount + 1
+
+            ELSE
+                Othcount <---- Othcount + 1
+            END IF
+        NEXT
+        OUTPUT "The seleted character count is: " + charcount
+
+        OUTPUT "Number of other characters are: " + Othcount
+
+        OUTPUT "Number of digits are: " + ncount
+
+        OUTPUT "Number of alphabets are: " + alphcounter

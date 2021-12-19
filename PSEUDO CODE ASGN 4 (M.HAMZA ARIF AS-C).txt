@@ -1,0 +1,41 @@
+                                                          PSEUDO CODE ASSIGNMENT 4
+                                                           //M.HAMZA ARIF AS-C//
+        DECLARE str1, str3 : STRING
+        DECLARE charA, selectchar, finalchar : CHARACTER
+        DECLARE charcount, maxcount, C, D : INTEGER
+
+        str1 <----- " "
+        str3 <----- " "
+        charA <----- " "
+        selectchar <----- " "
+        finalchar <----- " "
+        C <----- 0
+        D <----- 0
+        charcount <----- 0
+        maxcount <----- -100000
+        
+
+        OUTPUT "Please enter your string."
+        INPUT str1
+
+        FOR C <----- 1 TO LEN(str1)
+            charA = MID(str1, C, 1)
+            charcount <----- 0
+            FOR D <----- 1 TO LEN(str1)
+
+                selectchar <----- MID(str1, D, 1)
+                IF charA = selectchar THEN
+                    charcount <----- charcount + 1
+                END IF 
+            NEXT 
+            IF charcount > maxcount THEN
+                maxcount <----- charcount
+                finalchar <----- charA
+
+
+            END IF 
+
+        NEXT
+
+        OUTPUT "The most repeated character in your string is: " + finalchar
+        
